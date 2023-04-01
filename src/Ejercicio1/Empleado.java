@@ -1,6 +1,35 @@
 package Ejercicio1;
 
 public class Empleado {
-	private static int id;
+	private int id;
+	private String Nombre; 
+	private int Edad; 
+	
+	public static int contadorID=999;
 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getNombre() {
+		return Nombre;
+	}
+
+	public void setNombre(String nombre) {
+		Nombre = nombre;
+	}
+
+	public int getEdad() {
+		return Edad;
+	}
+
+	public void setEdad(int edad) {
+		Edad = edad;
+	} 
+	
+	
 }
