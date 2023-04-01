@@ -6,6 +6,21 @@ public class Empleado {
 	private int Edad; 
 	
 	public static int contadorID=999;
+	
+
+	public Empleado () { 
+		contadorID++;
+		this.id = contadorID;
+		this.Nombre = "Sin Nombre";
+		this.Edad=0;
+	}
+	
+	public Empleado (String nombre, int edad) {
+		contadorID++;
+		this.id = contadorID;
+		this.Nombre = nombre;
+		this.Edad=edad;
+	}
 
 	public int getId() {
 		return id;
