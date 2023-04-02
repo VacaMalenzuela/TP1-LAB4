@@ -1,15 +1,15 @@
 package Ejercicio1;
 
 public class Empleado {
-	private int id;
-	private String nombre; 
-	private int edad; 
+	private final int id; // Una vez definido, el "id" no se puede modificar.
+	private String nombre;
+	private int edad;
 	
-	public static int proximoId = 1000;
+	private static int proximoId = 1000; // Variable estática
 	
 	public static int devuelveProximoId() {
 		return proximoId;
-	}
+	} // Método estático
 
 	public Empleado () { 
 		this.id = proximoId;
@@ -29,10 +29,6 @@ public class Empleado {
 
 	public int getId() {
 		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getNombre() {
