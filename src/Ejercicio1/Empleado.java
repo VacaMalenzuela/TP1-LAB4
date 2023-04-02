@@ -8,7 +8,7 @@ public class Empleado {
 	private static int proximoId = 1000; // Variable estática
 	
 	public static String devuelveProximoId() {
-		return "El próximo ID será el " + proximoId.toString();
+		return "El próximo ID será el " + proximoId;
 	} // Método estático
 
 	public Empleado () { 
@@ -45,7 +45,11 @@ public class Empleado {
 
 	public void setEdad(int edad) {
 		this.edad = edad;
+	}
+
+	@Override
+	public String toString() {
+		return "Empleado ID=" + id + ", NOMBRE=" + nombre + ", EDAD=" + edad;
 	} 
-	
 	
 }
