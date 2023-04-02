@@ -7,8 +7,8 @@ public class Empleado {
 	
 	private static int proximoId = 1000; // Variable estática
 	
-	public static int devuelveProximoId() {
-		return proximoId;
+	public static String devuelveProximoId() {
+		return "El próximo ID será el " + proximoId.toString();
 	} // Método estático
 
 	public Empleado () { 
