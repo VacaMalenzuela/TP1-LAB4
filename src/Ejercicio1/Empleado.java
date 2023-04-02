@@ -12,7 +12,7 @@ public class Empleado {
 	} // Método estático
 
 	public Empleado () { 
-		this.id = proximoId;
+		this.id = proximoId; // Definida por única vez
 		this.nombre = "Sin Nombre";
 		this.edad = 99;
 
