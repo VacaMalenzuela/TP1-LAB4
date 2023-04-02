@@ -2,24 +2,29 @@ package Ejercicio1;
 
 public class Empleado {
 	private int id;
-	private String Nombre; 
-	private int Edad; 
+	private String nombre; 
+	private int edad; 
 	
-	public static int contadorID=999;
+	public static int proximoId = 1000;
 	
+	public static int devuelveProximoId() {
+		return proximoId;
+	}
 
 	public Empleado () { 
-		contadorID++;
-		this.id = contadorID;
-		this.Nombre = "Sin Nombre";
-		this.Edad=0;
+		this.id = proximoId;
+		this.nombre = "Sin Nombre";
+		this.edad = 99;
+
+		proximoId++;
 	}
 	
 	public Empleado (String nombre, int edad) {
-		contadorID++;
-		this.id = contadorID;
-		this.Nombre = nombre;
-		this.Edad=edad;
+		this.id = proximoId;
+		this.nombre = nombre;
+		this.edad = edad;
+
+		proximoId++;
 	}
 
 	public int getId() {
@@ -31,19 +36,19 @@ public class Empleado {
 	}
 
 	public String getNombre() {
-		return Nombre;
+		return nombre;
 	}
 
 	public void setNombre(String nombre) {
-		Nombre = nombre;
+		this.nombre = nombre;
 	}
 
 	public int getEdad() {
-		return Edad;
+		return edad;
 	}
 
 	public void setEdad(int edad) {
-		Edad = edad;
+		this.edad = edad;
 	} 
 	
 	
